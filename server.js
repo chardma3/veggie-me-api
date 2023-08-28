@@ -85,7 +85,7 @@ app.get("/restaurants", async (req, res) => {
     } else {
       // Handle other errors (network errors, 500 responses, etc.)
       const errorMessage = "Error fetching data";
-      res.status(500).json(process.env.YELP_API_KEY);
+      res.status(500).json(error);
     }
   }
 });
